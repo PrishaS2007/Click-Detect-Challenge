@@ -15,7 +15,7 @@ let circle1 = {
   color: "green",
 };
 
-let rect1 = {
+let player2 = {
   x: 500,
   y: 175,
   w: 50,
