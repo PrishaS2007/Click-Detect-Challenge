@@ -22,6 +22,7 @@ let circle2 = {
   h: 50,
   color: "green",
 };
+
 let circle3 = {
   x: 215,
   y: 105,
@@ -29,6 +30,7 @@ let circle3 = {
   h: 50,
   color: "green",
 };
+
 let circle4 = {
   x: 345,
   y: 145,
@@ -36,6 +38,7 @@ let circle4 = {
   h: 50,
   color: "green",
 };
+
 let circle5 = {
   x: 121,
   y: 157,
@@ -51,6 +54,7 @@ let rect1 = {
   h: 70,
   color: "red",
 };
+
 let rect2 = {
   x: 423,
   y: 245,
@@ -58,6 +62,7 @@ let rect2 = {
   h: 70,
   color: "red",
 };
+
 let rect3 = {
   x: 360,
   y: 189,
@@ -65,6 +70,7 @@ let rect3 = {
   h: 70,
   color: "red",
 };
+
 let rect4 = {
   x: 475,
   y: 133,
@@ -72,6 +78,7 @@ let rect4 = {
   h: 70,
   color: "red",
 };
+
 let rect5 = {
   x: 399,
   y: 225,
