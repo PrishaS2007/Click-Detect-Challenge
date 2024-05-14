@@ -15,9 +15,66 @@ let circle1 = {
   color: "green",
 };
 
-let player2 = {
+let circle2 = {
+  x: 115,
+  y: 145,
+  r: 40,
+  h: 50,
+  color: "green",
+};
+let circle3 = {
+  x: 215,
+  y: 105,
+  r: 40,
+  h: 50,
+  color: "green",
+};
+let circle4 = {
+  x: 345,
+  y: 145,
+  r: 40,
+  h: 50,
+  color: "green",
+};
+let circle5 = {
+  x: 121,
+  y: 157,
+  r: 40,
+  h: 50,
+  color: "green",
+};
+
+let rect1 = {
   x: 500,
   y: 175,
+  w: 50,
+  h: 70,
+  color: "red",
+};
+let rect2 = {
+  x: 423,
+  y: 245,
+  w: 50,
+  h: 70,
+  color: "red",
+};
+let rect3 = {
+  x: 360,
+  y: 189,
+  w: 50,
+  h: 70,
+  color: "red",
+};
+let rect4 = {
+  x: 475,
+  y: 133,
+  w: 50,
+  h: 70,
+  color: "red",
+};
+let rect5 = {
+  x: 399,
+  y: 225,
   w: 50,
   h: 70,
   color: "red",
@@ -35,16 +92,4 @@ function draw() {
 
 function drawFrame() {
   ctx.clearRect(0, 0, cnv.width, cnv.height);
-
-  // Draw Player 1 (Green Circle)
-  drawCircle(175, 175, 40, "green");
-  drawCircle(500, 500, 40, "green");
-  drawCircle(600, 200, 40, "green");
-  drawCircle(100, 400, 40, "green");
-
-  // Draw Player 2 (Red Rectangle)
-  drawRect(500, 175, 50, 70, "red");
-  drawRect(200, 195, 50, 70, "red");
-  drawRect(100, 115, 50, 70, "red");
-  drawRect(700, 395, 50, 70, "red");
 }
