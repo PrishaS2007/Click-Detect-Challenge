@@ -128,7 +128,7 @@ function mousedownHandler(event) {
       }
 
       if (circle.length === 0) {
-          return location.reload(alert("Game Over - You Win!"));
+          return location.reload(alert("Game Over - YOU Win!"));
       } 
   }  
 
