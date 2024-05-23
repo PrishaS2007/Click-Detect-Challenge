@@ -74,7 +74,6 @@ function randomCircle() {
    }
 }
 
-
 function drawRectangle(rect) {
   ctx.strokeStyle = "red";
   ctx.strokeRect(rect.x, rect.y, rect.sx, rect.sy)
@@ -119,12 +118,12 @@ function mousedownHandler(event) {
   mouseX = event.x - cnvRect.x;
   mouseY = event.y - cnvRect.y;
 
-  // Check for Clicked Circle
+  // Check if Circle Clicked
   for (let i = 0; i < circle.length; i++) {
-      let circle = circle[i];
-      let distance = Math.sqrt((mouseX - circle.x) ** 2 + (mouseY - circle.y) ** 2);
+      let circ = circle[i];
+      let distance = Math.sqrt((mouseX - circ.x) ** 2 + (mouseY - circ.y) ** 2);
   
-      if (mousePressed && distance <= circle.r) {
+      if (mousePressed && distance <= circ.r) {
           circle.splice(i, 1);
       }
 
@@ -133,14 +132,13 @@ function mousedownHandler(event) {
       } 
   }  
 
- 
-  // Check for Cliked Rectangle
+ // Check if Rectangle Clicked
   for (let i = 0; i < rectangle.length; i++) {
-      let rectangle = rectangle[i];
-      if (mouseX >= rectangle.x &&
-          mouseX <= rectangle.x + rectangle.sx &&
-          mouseY >= rectangle.y &&
-          mouseY <= rectangle.y + rectangle.sy) {
+      let rect = rectangle[i];
+      if (mouseX >= rect.x &&
+          mouseX <= rect.x + rect.sx &&
+          mouseY >= rect.y &&
+          mouseY <= rect.y + rect.sy) {
           return location.reload(alert("Game Over - You LOSE!")); 
       }
   } 
