@@ -132,7 +132,7 @@ function mousedownHandler(event) {
       } 
   }  
 
- // Check if Rectangle Clicked
+  // Check if Rectangle Clicked
   for (let i = 0; i < rectangle.length; i++) {
       let rect = rectangle[i];
       if (mouseX >= rect.x &&
